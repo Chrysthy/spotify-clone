@@ -8,6 +8,7 @@ const Main = () => {
 
         <div className="main">
 
+            {/* Artistas Populares */}
             <div className="item-list">
 
                 <div className="item-list__header">
@@ -155,6 +156,7 @@ const Main = () => {
             </div>
 
 
+            {/* Músicas Populares */}
             <div className="item-list">
 
                 <div className="item-list__header">
