@@ -18,203 +18,285 @@ const Main = () => {
 
                 </div>
 
-                {/* 1 */}
-                <div className="single-item" >
 
-                    <div className="single-item__div-image-button" >
+                <div className="item-list__container">
 
-                        <div className="single-item__div-image">
+                    {/* 1 */}
+                    <div className="single-item" >
 
-                            <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
+                        <div className="single-item__div-image-button" >
+
+                            <div className="single-item__div-image">
+
+                                <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
+
+                            </div>
+
+                        <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
 
                         </div>
 
-                     <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
+                        <div className="single-item__texts">
+
+                            <div className=".single-item__2lines">
+
+                                <p className="single-item__title">Luan Santana</p>
+
+                            </div>
+
+                            <p className="single-item__type">Artista</p>
+
+                        </div>
 
                     </div>
 
-                    <div className="single-item__texts">
+                    {/* 2 */}
+                    <div className="single-item" >
 
-                        <p className="single-item__title">Luan Santana</p>
+                        <div className="single-item__div-image-button" >
 
-                        <p className="single-item__type">Artista</p>
+                            <div className="single-item__div-image">
+
+                                <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
+
+                            </div>
+
+                        <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
+
+                        </div>
+
+                        <div className="single-item__texts">
+
+                            <p className="single-item__title">Luan Santana</p>
+
+                            <p className="single-item__type">Artista</p>
+
+                        </div>
+
+                    </div>
+
+                    {/* 3 */}
+                    <div className="single-item" >
+
+                        <div className="single-item__div-image-button" >
+
+                            <div className="single-item__div-image">
+
+                                <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
+
+                            </div>
+
+                        <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
+
+                        </div>
+
+                        <div className="single-item__texts">
+
+                            <p className="single-item__title">Luan Santana</p>
+
+                            <p className="single-item__type">Artista</p>
+
+                        </div>
+
+                    </div>
+
+                    {/* 4 */}
+                    <div className="single-item" >
+
+                        <div className="single-item__div-image-button" >
+
+                            <div className="single-item__div-image">
+
+                                <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
+
+                            </div>
+
+                        <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
+
+                        </div>
+
+                        <div className="single-item__texts">
+
+                            <p className="single-item__title">Luan Santana</p>
+
+                            <p className="single-item__type">Artista</p>
+
+                        </div>
+
+                    </div>
+
+                    {/* 5 */}
+                    <div className="single-item" >
+
+                        <div className="single-item__div-image-button" >
+
+                            <div className="single-item__div-image">
+
+                                <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
+
+                            </div>
+
+                        <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
+
+                        </div>
+
+                        <div className="single-item__texts">
+
+                            <p className="single-item__title">Luan Santana</p>
+
+                            <p className="single-item__type">Artista</p>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-                {/* 2 */}
-                <div className="single-item" >
+            </div>
 
-                    <div className="single-item__div-image-button" >
 
-                        <div className="single-item__div-image">
+            <div className="item-list">
 
-                            <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
+                <div className="item-list__header">
 
-                        </div>
+                    <h2>Músicas Populares</h2>
 
-                     <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
-
-                    </div>
-
-                    <div className="single-item__texts">
-
-                        <p className="single-item__title">Luan Santana</p>
-
-                        <p className="single-item__type">Artista</p>
-
-                    </div>
+                    <a className="item-list__link" href="/">Mostrar tudo</a>
 
                 </div>
 
-                {/* 3 */}
-                <div className="single-item" >
 
-                    <div className="single-item__div-image-button" >
+                <div className="item-list__container">
 
-                        <div className="single-item__div-image">
+                    {/* 1 */}
+                    <div className="single-item" >
 
-                            <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
+                        <div className="single-item__div-image-button" >
 
-                        </div>
+                            <div className="single-item__div-image">
 
-                     <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
+                                <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
 
-                    </div>
+                            </div>
 
-                    <div className="single-item__texts">
-
-                        <p className="single-item__title">Luan Santana</p>
-
-                        <p className="single-item__type">Artista</p>
-
-                    </div>
-
-                </div>
-
-                {/* 4 */}
-                <div className="single-item" >
-
-                    <div className="single-item__div-image-button" >
-
-                        <div className="single-item__div-image">
-
-                            <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
+                        <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
 
                         </div>
 
-                     <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
+                        <div className="single-item__texts">
 
-                    </div>
+                            <div className=".single-item__2lines">
 
-                    <div className="single-item__texts">
+                                <p className="single-item__title">Luan Santana</p>
 
-                        <p className="single-item__title">Luan Santana</p>
+                            </div>
 
-                        <p className="single-item__type">Artista</p>
-
-                    </div>
-
-                </div>
-
-                {/* 5 */}
-                <div className="single-item" >
-
-                    <div className="single-item__div-image-button" >
-
-                        <div className="single-item__div-image">
-
-                            <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
+                            <p className="single-item__type">Artista</p>
 
                         </div>
 
-                     <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
-
                     </div>
 
-                    <div className="single-item__texts">
+                    {/* 2 */}
+                    <div className="single-item" >
 
-                        <p className="single-item__title">Luan Santana</p>
+                        <div className="single-item__div-image-button" >
 
-                        <p className="single-item__type">Artista</p>
+                            <div className="single-item__div-image">
 
-                    </div>
+                                <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
 
-                </div>
+                            </div>
 
-                {/* 6 */}
-                <div className="single-item" >
-
-                    <div className="single-item__div-image-button" >
-
-                        <div className="single-item__div-image">
-
-                            <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
+                        <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
 
                         </div>
 
-                     <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
+                        <div className="single-item__texts">
 
-                    </div>
+                            <p className="single-item__title">Luan Santana</p>
 
-                    <div className="single-item__texts">
-
-                        <p className="single-item__title">Luan Santana</p>
-
-                        <p className="single-item__type">Artista</p>
-
-                    </div>
-
-                </div>
-
-                {/* 7 */}
-                <div className="single-item" >
-
-                    <div className="single-item__div-image-button" >
-
-                        <div className="single-item__div-image">
-
-                            <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
+                            <p className="single-item__type">Artista</p>
 
                         </div>
 
-                     <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
-
                     </div>
 
-                    <div className="single-item__texts">
+                    {/* 3 */}
+                    <div className="single-item" >
 
-                        <p className="single-item__title">Luan Santana</p>
+                        <div className="single-item__div-image-button" >
 
-                        <p className="single-item__type">Artista</p>
+                            <div className="single-item__div-image">
 
-                    </div>
+                                <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
 
-                </div>
+                            </div>
 
-                {/* 8 */}
-                <div className="single-item" >
-
-                    <div className="single-item__div-image-button" >
-
-                        <div className="single-item__div-image">
-
-                            <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
+                        <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
 
                         </div>
 
-                     <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
+                        <div className="single-item__texts">
+
+                            <p className="single-item__title">Luan Santana</p>
+
+                            <p className="single-item__type">Artista</p>
+
+                        </div>
 
                     </div>
 
-                    <div className="single-item__texts">
+                    {/* 4 */}
+                    <div className="single-item" >
 
-                        <p className="single-item__title">Luan Santana</p>
+                        <div className="single-item__div-image-button" >
 
-                        <p className="single-item__type">Artista</p>
+                            <div className="single-item__div-image">
+
+                                <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
+
+                            </div>
+
+                        <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
+
+                        </div>
+
+                        <div className="single-item__texts">
+
+                            <p className="single-item__title">Luan Santana</p>
+
+                            <p className="single-item__type">Artista</p>
+
+                        </div>
 
                     </div>
+
+                    {/* 5 */}
+                    <div className="single-item" >
+
+                        <div className="single-item__div-image-button" >
+
+                            <div className="single-item__div-image">
+
+                                <img className="single-item__image"  src="https://i.scdn.co/image/ab67616100005174fde13b4ff04ee1c0f33c6878" alt="Imagem do Artista X"/>
+
+                            </div>
+
+                        <FontAwesomeIcon className="single-item__icon" icon="fa-solid fa-circle-play" />
+
+                        </div>
+
+                        <div className="single-item__texts">
+
+                            <p className="single-item__title">Luan Santana</p>
+
+                            <p className="single-item__type">Artista</p>
+
+                        </div>
+
+                    </div>
+
 
                 </div>
 
