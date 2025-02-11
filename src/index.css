@@ -19,6 +19,7 @@ a {
 }
 
 
+
 /*Header */
 
 .header {
@@ -30,5 +31,26 @@ a {
 }
 
 .header__link:hover {
+  text-decoration: underline;
+}
+
+
+/*Main */
+
+.main {
+  padding: 20px;
+  margin: 0 10px 10px;
+  border-radius: 50px;
+
+  background-image: linear-gradient(to botton, #062d14, #000);
+}
+
+.main__texts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__link:hover {
   text-decoration: underline;
 }
