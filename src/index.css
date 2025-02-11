@@ -21,8 +21,10 @@
   --border-radius-l: 15px;
 }
 
+
+
+
 /* Reset */
-/* Seletor Universal */
 * {
   padding: 0;
   margin: 0;
@@ -55,6 +57,8 @@ img {
   min-height: 100svh;
 }
 
+
+
 /* Header */
 
 .header {
@@ -63,6 +67,8 @@ img {
   align-items: center;
   padding: 8px 20px;
 }
+
+
 
 /* Main */
 
@@ -86,6 +92,9 @@ img {
     padding: 12px 16px;
   }
 }
+
+
+
 
 /* ItemList */
 
@@ -122,6 +131,9 @@ img {
     gap: 10px;
   }
 }
+
+
+
 
 /* SingleItem */
 
@@ -224,6 +236,9 @@ img {
   }
 }
 
+
+
+
 /* Artist */
 
 .artist {
@@ -282,6 +297,8 @@ img {
     gap: 16px;
   }
 }
+
+
 
 /* SongItem */
 
