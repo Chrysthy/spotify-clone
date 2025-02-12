@@ -1,8 +1,9 @@
 //import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
+import SingleItem from "./SingleItem.jsx";
 
-const ItemList = () => {
+const ItemList = ({ title, items }) => {
     return (
 
         <div className="main">
@@ -12,12 +13,13 @@ const ItemList = () => {
 
                 <div className="item-list__header">
 
-                    <h2>Artistas Populares</h2>
+                    <h2>{title} Populares</h2>
 
                     <a className="item-list__link" href="/">Mostrar tudo</a>
 
                 </div>
 
+                <SingleItem/>
 
                 <div className="item-list__container">
 
@@ -32,7 +34,7 @@ const ItemList = () => {
 
                             </div>
 
-                            <FontAwesomeIcon className="single-item__icon"  icon={faCirclePlay} />
+                            <FontAwesomeIcon className="single-item__icon" icon={faCirclePlay} />
 
                         </div>
 
@@ -61,7 +63,7 @@ const ItemList = () => {
 
                             </div>
 
-                            <FontAwesomeIcon className="single-item__icon"  icon={faCirclePlay} />
+                            <FontAwesomeIcon className="single-item__icon" icon={faCirclePlay} />
 
                         </div>
 
@@ -86,7 +88,7 @@ const ItemList = () => {
 
                             </div>
 
-                            <FontAwesomeIcon className="single-item__icon"  icon={faCirclePlay} />
+                            <FontAwesomeIcon className="single-item__icon" icon={faCirclePlay} />
 
                         </div>
 
@@ -111,7 +113,7 @@ const ItemList = () => {
 
                             </div>
 
-                            <FontAwesomeIcon className="single-item__icon"  icon={faCirclePlay} />
+                            <FontAwesomeIcon className="single-item__icon" icon={faCirclePlay} />
 
                         </div>
 
@@ -136,7 +138,7 @@ const ItemList = () => {
 
                             </div>
 
-                            <FontAwesomeIcon className="single-item__icon"  icon={faCirclePlay} />
+                            <FontAwesomeIcon className="single-item__icon" icon={faCirclePlay} />
 
                         </div>
 
@@ -180,7 +182,7 @@ const ItemList = () => {
 
                             </div>
 
-                            <FontAwesomeIcon className="single-item__icon"  icon={faCirclePlay} />
+                            <FontAwesomeIcon className="single-item__icon" icon={faCirclePlay} />
 
                         </div>
 
@@ -209,7 +211,7 @@ const ItemList = () => {
 
                             </div>
 
-                            <FontAwesomeIcon className="single-item__icon"  icon={faCirclePlay} />
+                            <FontAwesomeIcon className="single-item__icon" icon={faCirclePlay} />
 
                         </div>
 
@@ -234,7 +236,7 @@ const ItemList = () => {
 
                             </div>
 
-                            <FontAwesomeIcon className="single-item__icon"  icon={faCirclePlay} />
+                            <FontAwesomeIcon className="single-item__icon" icon={faCirclePlay} />
 
                         </div>
 
@@ -259,7 +261,7 @@ const ItemList = () => {
 
                             </div>
 
-                            <FontAwesomeIcon className="single-item__icon"  icon={faCirclePlay} />
+                            <FontAwesomeIcon className="single-item__icon" icon={faCirclePlay} />
 
                         </div>
 
@@ -284,7 +286,7 @@ const ItemList = () => {
 
                             </div>
 
-                            <FontAwesomeIcon className="single-item__icon"  icon={faCirclePlay} />
+                            <FontAwesomeIcon className="single-item__icon" icon={faCirclePlay} />
 
                         </div>
 
