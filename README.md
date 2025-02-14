@@ -1,1 +1,3 @@
-<h1 align="center"> Spotify Clone </h1> 
+<h1 align="center"> Spotify Clone 🎶 </h1> 
+
+<p align="center">Project Based on Spotify.</p>
