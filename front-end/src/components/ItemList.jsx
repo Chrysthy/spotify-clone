@@ -19,30 +19,7 @@ const ItemList = ({ title, items }) => {
 
             <div className="item-list__container">
 
-                {items === 5 ? (
-
-                    <>
-                        <SingleItem />
-                        <SingleItem />
-                        <SingleItem />
-                        <SingleItem />
-                        <SingleItem />
-                    </>
-                  )  : (
-                    <>
-                        <SingleItem />
-                        <SingleItem />
-                        <SingleItem />
-                        <SingleItem />
-                        <SingleItem />
-                        <SingleItem />
-                        <SingleItem />
-                        <SingleItem />
-                        <SingleItem />
-                        <SingleItem />
-                    </>
-                  )
-                }
+                {Array(items).fill().map(() => { return <SingleItem /> })}
 
 
             </div>
