@@ -1,7 +1,7 @@
 //import React from 'react'
 import SingleItem from "./SingleItem.jsx";
 
-const ItemList = ({ title, items, itemsArray, path }) => {
+const ItemList = ({ title, items, itemsArray, path, idPath }) => {
 
     return (
 
@@ -24,6 +24,7 @@ const ItemList = ({ title, items, itemsArray, path }) => {
                     .map((currObj, index) => (
 
                         < SingleItem
+                            idPath={idPath}
                             {...currObj}
                             key={`${title}-$index}`} />
 
