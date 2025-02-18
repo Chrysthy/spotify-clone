@@ -84,3 +84,11 @@ export default App2;
 
 // Spread operator
 // ...
+
+
+//Comparação de undefined
+// <p className="single-item__type">{artist === undefined ? "Artista" : artist}</p>
+//<p className="single-item__type">{artist ? artist : "Artista"}</p>
+
+//{artist ?? "Artista"}</p>
+//tem artista? Se sim usa ele mesmo, não tem usa "Artista"
