@@ -1,5 +1,6 @@
 //import React from 'react'
 import SingleItem from "./SingleItem.jsx";
+import { artistArray } from "../assets/database/artists.js";
 
 const ItemList = ({ title, items }) => {
 
@@ -19,8 +20,7 @@ const ItemList = ({ title, items }) => {
 
             <div className="item-list__container">
 
-                {Array(items)
-                    .fill()
+                {artistArray
                     .map((currentValue, index) => (
 
                         < SingleItem key={`${title}-${index}`} />
