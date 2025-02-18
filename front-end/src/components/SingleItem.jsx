@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 
-const SingleItem = ({ id, name, image, banner }) => {
+const SingleItem = ({ id, name, image, banner, artist }) => {
     return (
 
         <div className="single-item" >
@@ -11,7 +11,7 @@ const SingleItem = ({ id, name, image, banner }) => {
 
                 <div className="single-item__div-image">
 
-                        <img className="single-item__image" src={image} alt={`Imagem do Artista ${name} `} />
+                    <img className="single-item__image" src={image} alt={`Imagem do Artista ${name} `} />
 
                 </div>
 
@@ -27,7 +27,7 @@ const SingleItem = ({ id, name, image, banner }) => {
 
                 </div>
 
-                <p className="single-item__type">Artista</p>
+                <p className="single-item__type">{artist === undefined ? "Artista" : artist}</p>
 
             </div>
 
