@@ -1,7 +1,7 @@
 //import React from 'react'
 import SingleItem from "./SingleItem.jsx";
 
-const ItemList = ({ title, items, itemsArray }) => {
+const ItemList = ({ title, items, itemsArray, path }) => {
 
     return (
 
@@ -11,7 +11,7 @@ const ItemList = ({ title, items, itemsArray }) => {
 
                 <h2>{title} Populares</h2>
 
-                <a className="item-list__link" href="/">Mostrar tudo</a>
+                <a href={path} className="item-list__link" >Mostrar tudo</a>
 
             </div>
 
