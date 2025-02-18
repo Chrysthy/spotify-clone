@@ -5,7 +5,7 @@ import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 const SingleItem = ({ id, name, image, banner, artist }) => {
     return (
 
-        <div className="single-item" >
+        <a href="/" className="single-item" >
 
             <div className="single-item__div-image-button" >
 
@@ -31,7 +31,7 @@ const SingleItem = ({ id, name, image, banner, artist }) => {
 
             </div>
 
-        </div>
+        </a>
 
 
     )
