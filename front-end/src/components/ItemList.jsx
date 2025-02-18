@@ -1,8 +1,7 @@
 //import React from 'react'
 import SingleItem from "./SingleItem.jsx";
-import { artistArray } from "../assets/database/artists.js";
 
-const ItemList = ({ title, items }) => {
+const ItemList = ({ title, items, itemsArray }) => {
 
     return (
 
@@ -20,7 +19,7 @@ const ItemList = ({ title, items }) => {
 
             <div className="item-list__container">
 
-                {artistArray
+                {itemsArray
                     .filter((currentValue, index) => index < items)
                     .map((currObj, index) => (
 
