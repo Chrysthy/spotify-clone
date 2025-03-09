@@ -1,3 +1,9 @@
+<h2 align="center"> 🚧 Work in progress 🚧 </h2>
+<p align="center">This project is still under development. </p>
+
+<br>
+<br>
+
 <h1 align="center"> Spotify Clone 🎶 </h1> 
 
 <p align="center">Project Based on Spotify.</p>
