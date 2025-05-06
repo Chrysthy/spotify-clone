@@ -1,14 +1,15 @@
 /* Reset */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #000;
-  color: #fff;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -16,3 +17,16 @@ a {
     text-decoration: none;
 }
 
+/* Header */
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+
+}
