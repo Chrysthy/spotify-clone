@@ -17,6 +17,12 @@ a {
     text-decoration: none;
 }
 
+#root {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}h
+
 /* Header */
 
 .header {
@@ -29,4 +35,26 @@ a {
 .header__link:hover {
     text-decoration: underline;
 
+}
+
+/* Main */
+.main {
+    background-color:green;
+    padding: 20px;
+    margin: 0 10px 10px;
+    border-radius: 15px;
+
+    height: 100vh;
+    flex: 1;
+}
+
+
+.main__texts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__link {
+    text-decoration: underline;
 }
