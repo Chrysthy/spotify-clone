@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 
 const Main = () => {
     return (
@@ -17,7 +19,11 @@ const Main = () => {
 
                     <img className='single-item__image' src="https://i.scdn.co/image/ab67616100005174b97627e4ea832ed67617627a" alt="Imagem do artista X" />
 
+                    <FontAwesomeIcon icon={faCirclePlay} />
+
                     <p>Matheus & Kauan</p>
+
+                    <p>Artista</p>
 
                 </div>
 
