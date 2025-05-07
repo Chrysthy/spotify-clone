@@ -74,25 +74,20 @@ img {
 
 /* Main */
 .main {
+    margin: 0 10px 10px;
+    padding: 20px;
+    border-radius: var(--border-radius-l);
+    flex: 1;
     background-image: linear-gradient(to bottom,
             var(--green-900),
             var(--green-1000));
-
-    padding: 20px;
-    margin: 0 10px 10px;
-    border-radius: 15px;
-
-    height: 100vh;
-    flex: 1;
-}
-
-
-.main__texts {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.main__link {
-    text-decoration: underline;
+@media (max-width: 480px) {
+    .main {
+        padding: 12px 16px;
+    }
 }
