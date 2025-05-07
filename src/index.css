@@ -19,9 +19,9 @@ a {
 
 #root {
     display: flex;
-    flex-direction: row;
-    height: 100vh;
-}h
+    flex-direction: column;
+    height: 100svh;
+}
 
 /* Header */
 
@@ -39,7 +39,7 @@ a {
 
 /* Main */
 .main {
-    background-color:green;
+    background-image: linear-gradient();
     padding: 20px;
     margin: 0 10px 10px;
     border-radius: 15px;
