@@ -64,7 +64,10 @@ a {
 
 /* Main */
 .main {
-    background-image: linear-gradient();
+    background-image: linear-gradient(to bottom,
+            var(--green-900),
+            var(--green-1000));
+            
     padding: 20px;
     margin: 0 10px 10px;
     border-radius: 15px;
