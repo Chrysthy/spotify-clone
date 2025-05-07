@@ -4,11 +4,15 @@ const Main = () => {
     return (
         <div className='main'>
 
-            <div className='main__texts'>
+            <div className='item-list'>
 
-                <h2>Artistas Populares</h2>
+                <div className='item-list__header'>
 
-                <a className='main__link' href="/">Mostrar tudo</a>
+                    <h2>Artistas Populares</h2>
+
+                    <a className='item-list__link' href="/">Mostrar tudo</a>
+                </div>
+
             </div>
 
         </div>
