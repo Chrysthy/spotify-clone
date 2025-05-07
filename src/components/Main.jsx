@@ -19,7 +19,7 @@ const Main = () => {
 
                     <img className='single-item__image' src="https://i.scdn.co/image/ab67616100005174b97627e4ea832ed67617627a" alt="Imagem do artista X" />
 
-                    <FontAwesomeIcon icon={faCirclePlay} />
+                    <FontAwesomeIcon className='single-item__icon' icon={faCirclePlay} />
 
                     <p>Matheus & Kauan</p>
 
