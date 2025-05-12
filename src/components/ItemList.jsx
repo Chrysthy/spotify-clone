@@ -1,7 +1,7 @@
 import React from 'react'
 import SingleItem from './SingleItem';
 
-function ItemList() {
+const ItemList = ({title}) => {
 
     return (
 
@@ -9,7 +9,7 @@ function ItemList() {
 
             <div className='item-list__header'>
 
-                <h2>Artistas Populares</h2>
+                <h2>{title} Populares</h2>
 
                 <a className='item-list__link' href="/">Mostrar tudo</a>
             </div>
