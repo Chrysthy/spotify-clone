@@ -7,7 +7,7 @@ const Main = () => {
 
             <ItemList title="Artistas" items={5} />
 
-            <ItemList title="Músicas" items={6} />
+            <ItemList title="Músicas" items={10} />
 
         </div>
     )
