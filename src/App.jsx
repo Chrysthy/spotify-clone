@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
-import { BrowserRouter, Routes, Route } from 'react-router-dom/BrowserRouter';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Artist from './pages/Artist';
 import Artists from './pages/Artists';
@@ -23,8 +23,6 @@ const App = () => {
         <Route path="/artist/:id" element={<Artist />} />
         <Route path="/songs" element={<Songs />} />
         <Route path="/song/:id" element={<Song />} />
-
-        <Main />
 
       </Routes>
 
