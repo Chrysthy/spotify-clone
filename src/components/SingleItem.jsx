@@ -11,7 +11,7 @@ const SingleItem = (id, name, image) => {
 
                 <div className='single-item__div-image'>
 
-                    <img className='single-item__image' src={image} alt={`${name}`} />
+                    <img className='single-item__image' src={image} alt={`Imagem do Artista ${name}`} />
 
                 </div>
 
