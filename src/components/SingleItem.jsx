@@ -1,11 +1,12 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const SingleItem = (id, name, image, banner, artist, idPath) => {
     return (
 
-        <a href={`${idPath}/${id}`}className='single-item'>
+        <Link to={`${idPath}/${id}`} className='single-item'>
 
             <div className='single-item__div-image-button'>
 
@@ -31,7 +32,7 @@ const SingleItem = (id, name, image, banner, artist, idPath) => {
 
             </div>
 
-        </a>
+        </Link>
     )
 }
 
