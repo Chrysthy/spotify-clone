@@ -8,10 +8,11 @@ const Main = () => {
     return (
 
         <div className="main">
+            
             {/* Item List de Artistas */}
             <ItemList
                 title="Artistas"
-                items={10}
+                items={5}
                 itemsArray={artistArray}
                 path="/artists"
                 idPath="/artist"
@@ -20,7 +21,7 @@ const Main = () => {
             {/* Item List de Músicas */}
             <ItemList
                 title="Músicas"
-                items={20}
+                items={10}
                 itemsArray={songsArray}
                 path="/songs"
                 idPath="/song"
