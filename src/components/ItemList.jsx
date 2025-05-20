@@ -7,6 +7,7 @@ const ItemList = ({ title, items, itemsArray, path, idPath }) => {
     const { pathname } = useLocation();
 
     const isHome = pathname === "/";
+    const finalItems = isHome ? items : Infinity;
 
     return (
 
@@ -29,7 +30,7 @@ const ItemList = ({ title, items, itemsArray, path, idPath }) => {
             <div className="item-list__container">
 
                 {itemsArray
-                    .filter((currentValue, index) => index < items)
+                    .filter((currentValue, index) => index < finalItems)
                     .map((currObj, index) => (
                         <SingleItem
                             idPath={idPath}
