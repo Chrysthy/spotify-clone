@@ -1,8 +1,13 @@
 import React from "react";
 import SingleItem from "./SingleItem";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const ItemList = ({ title, items, itemsArray, path, idPath }) => {
+
+    const { pathname } = useLocation();
+
+    const isHome = pathname === "/";
+
     return (
 
         <div className="item-list">
@@ -11,9 +16,13 @@ const ItemList = ({ title, items, itemsArray, path, idPath }) => {
 
                 <h2>{title} populares</h2>
 
-                <Link to={path} className="item-list__link">
-                    Mostrar tudo
-                </Link>
+                {isHome ? (
+
+                    <Link to={path} className="item-list__link">
+                        Mostrar tudo
+                    </Link>
+
+                ) : (<></>)}
 
             </div>
 
@@ -28,11 +37,11 @@ const ItemList = ({ title, items, itemsArray, path, idPath }) => {
                             key={`${title}-${index}`}
                         />
                     ))}
-                
+
             </div>
 
         </div>
-        
+
     );
 };
 
