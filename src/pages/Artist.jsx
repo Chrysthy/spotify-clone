@@ -12,6 +12,13 @@ const Artist = () => {
 
     const artistObj = artistArray.filter((currentArtistObj) => currentArtistObj.id === Number(id))[0];
 
+    const songsArrayFromArtist = songsArray.filter((currentSongObj) => currentSongObj.artist === artistObj.name);
+
+    const randomIndex = Math.floor(Math.random() * (songsArrayFromArtist.length - 1));
+
+    const randomIdFromArtist = songsArrayFromArtist[randomIndex].id;
+
+
     return (
 
         <div className='artist'>
@@ -31,11 +38,11 @@ const Artist = () => {
 
                 <h2>Populares</h2>
 
-                <SongList />
+                <SongList songsArray={songsArrayFromArtist} />
 
             </div>
 
-            <Link to="/song/1">
+            <Link to={`/song/${randomIdFromArtist}`}>
 
                 <FontAwesomeIcon
                     className="single-item__icon single-item__icon--artist"
