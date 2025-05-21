@@ -13,6 +13,8 @@ const SongList = () => {
             <SongItem />
             <SongItem />
 
+            <p className='song-list__see-more'>Ver mais</p>
+
         </div>
     )
 }
