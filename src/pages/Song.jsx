@@ -1,4 +1,5 @@
 import React from 'react'
+import Player from '../components/Player'
 
 const Song = () => {
     return (
@@ -17,7 +18,22 @@ const Song = () => {
 
             </div>
 
-            <div className="song__bar"></div>
+            <div className="song__bar">
+
+                <div className='song__artist-image'>
+
+                    <img s
+                        rc="https://i.scdn.co/image/ab67616d00001e02af41105c5cd91b28f2cf219d"
+                        alt="Imagem do artista y"
+                    />
+
+                </div>
+
+                <Player />
+
+                <div></div>
+
+            </div>
 
         </div>
     )
