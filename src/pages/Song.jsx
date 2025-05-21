@@ -22,8 +22,10 @@ const Song = () => {
 
                 <div className='song__artist-image'>
 
-                    <img s
-                        rc="https://i.scdn.co/image/ab67616d00001e02af41105c5cd91b28f2cf219d"
+                    <img
+                        width={75}
+                        height={75}
+                        src="https://i.scdn.co/image/ab67616d00001e02af41105c5cd91b28f2cf219d"
                         alt="Imagem do artista y"
                     />
 
@@ -31,7 +33,13 @@ const Song = () => {
 
                 <Player />
 
-                <div></div>
+                <div>
+
+                    <p className='song__name'>Última Saudade - Ao Vivo</p>
+
+                    <p>Henrique & Juliano</p>
+
+                </div>
 
             </div>
 
