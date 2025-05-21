@@ -3,11 +3,14 @@ import SongItem from './SongItem'
 
 
 const SongList = ({ songsArray }) => {
+
+    const items = 5;
+
     return (
 
         <div className="song-list">
 
-            {songsArray.map((currentObj, index) => (<SongItem {...currentObj} index={index} key={(index)} />))}
+            {songsArray.filter((currentValue, index) => index < items).map((currentObj, index) => (<SongItem {...currentObj} index={index} key={(index)} />))}
 
             <p className='song-list__see-more'>Ver mais</p>
 
