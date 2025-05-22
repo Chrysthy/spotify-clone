@@ -9,7 +9,7 @@ const Song = () => {
     const { id } = useParams();
 
 
-    const { image, name, duration, artist, audio } = songsArray.filter((currentSongObj) => currentSongObj.id === Number(id))[0];
+    const { image, name, duration, artist } = songsArray.filter((currentSongObj) => currentSongObj.id === Number(id))[0];
 
     const artistObj = artistArray.filter((currentArtistObj) => currentArtistObj.name === artist)[0];
 
