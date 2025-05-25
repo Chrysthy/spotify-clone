@@ -4,3 +4,7 @@ const URI = "mongodb+srv://chrystinemartins:O78VS2hiJQ8AmStw@cluster0.rapadho.mo
 
 const client = new MongoClient(URI);
 
+const db = client.db("spotifyAula");
+const songCollection = await db.collection("songs").find({}).toArray();
+
+console.log(songCollection)
