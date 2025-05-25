@@ -1,10 +1,18 @@
 import { useState } from 'react';
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCirclePlay, faBackwardStep, faForwardStep } from '@fortawesome/free-solid-svg-icons';
+import { faCirclePlay, faBackwardStep, faForwardStep, faCirclePause } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 import { useRef } from 'react';
+
+const formatTime = (timeInSeconds) => {
+
+    const minutes = Math.floor(timeInSeconds / 60).toString().padStart(2, '0');
+    const seconds = Math.floor(timeInSeconds - minutes * 60).toString().padStart(2, '0');
+
+    return `${minutes}:${seconds}`;
+}
 
 const Player = ({ duration, randomIdFromArtist, randomId2FromArtist, audio }) => {
 
@@ -16,6 +24,8 @@ const Player = ({ duration, randomIdFromArtist, randomId2FromArtist, audio }) =>
         isPlaying ? audioPlayer.current.pause() : audioPlayer.current.play();
 
         setIsPlaying(!isPlaying);
+
+        console.log(formatTime(audioPlayer.current.currentTime));
 
     }
 
@@ -35,7 +45,7 @@ const Player = ({ duration, randomIdFromArtist, randomId2FromArtist, audio }) =>
 
                 <FontAwesomeIcon
                     className="player__icon player__icon--play"
-                    icon={faCirclePlay}
+                    icon={isPlaying ? faCirclePause : faCirclePlay}
                     onClick={() => playPause()}
                 />
 
