@@ -9,3 +9,12 @@ const newArtistArray = artistArray.map((currentArtistObjs) => {
     return newArtistObj;
 
 })
+
+const newSongArray = songsArray.map((currentSongObjs) => {
+
+    const newSongObj = { ...currentSongObjs };
+    delete newSongObj.id
+
+    return newSongObj;
+
+})
