@@ -1,9 +1,24 @@
+import { useState } from 'react';
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay, faBackwardStep, faForwardStep } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
-const Player = ({ duration, randomIdFromArtist, randomId2FromArtist }) => {
+import { useRef } from 'react';
+
+const Player = ({ duration, randomIdFromArtist, randomId2FromArtist, audio }) => {
+
+    const audioPlayer = useRef();
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    const playPause = () => {
+
+        isPlaying ? audioPlayer.current.pause() : audioPlayer.current.play();
+
+        setIsPlaying(!isPlaying);
+
+    }
+
     return (
         <div className='player'>
 
@@ -21,6 +36,7 @@ const Player = ({ duration, randomIdFromArtist, randomId2FromArtist }) => {
                 <FontAwesomeIcon
                     className="player__icon player__icon--play"
                     icon={faCirclePlay}
+                    onClick={() => playPause()}
                 />
 
                 <Link to={`/song/${randomId2FromArtist}`}>
@@ -47,6 +63,7 @@ const Player = ({ duration, randomIdFromArtist, randomId2FromArtist }) => {
 
             </div>
 
+            <audio ref={audioPlayer} src={audio}></audio>
 
         </div>
     )
