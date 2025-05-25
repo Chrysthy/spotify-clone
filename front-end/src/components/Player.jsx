@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay, faBackwardStep, faForwardStep, faCirclePause } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 
 const formatTime = (timeInSeconds) => {
 
@@ -18,6 +18,7 @@ const Player = ({ duration, randomIdFromArtist, randomId2FromArtist, audio }) =>
 
     const audioPlayer = useRef();
     const [isPlaying, setIsPlaying] = useState(false);
+    const [currentTime, setCurrentTime] = useState(formatTime(0));
 
     const playPause = () => {
 
@@ -25,9 +26,17 @@ const Player = ({ duration, randomIdFromArtist, randomId2FromArtist, audio }) =>
 
         setIsPlaying(!isPlaying);
 
-        console.log(formatTime(audioPlayer.current.currentTime));
+    };
 
-    }
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentTime(formatTime(audioPlayer.current.currentTime));
+        }, 1000);
+
+        return () => clearInterval(intervalId);
+
+    }, [isPlaying]);
+
 
     return (
         <div className='player'>
@@ -61,7 +70,7 @@ const Player = ({ duration, randomIdFromArtist, randomId2FromArtist, audio }) =>
 
             <div className="player__progress">
 
-                <p>00:00</p>
+                <p>{currentTime}</p>
 
                 <div className="player__bar">
 
