@@ -14,11 +14,22 @@ const formatTime = (timeInSeconds) => {
     return `${minutes}:${seconds}`;
 }
 
+const timeInSeconds = (timeString) => {
+
+    const splitArray = timeString.split(':');
+    const minutes = Number(splitArray[0]);
+    const seconds = Number(splitArray[1]);
+
+    return seconds + minutes * 60;
+}
+
 const Player = ({ duration, randomIdFromArtist, randomId2FromArtist, audio }) => {
 
     const audioPlayer = useRef();
+    const progressBar = useRef();
     const [isPlaying, setIsPlaying] = useState(false);
     const [currentTime, setCurrentTime] = useState(formatTime(0));
+    const durationInSeconds = timeInSeconds(duration);
 
     const playPause = () => {
 
@@ -30,13 +41,16 @@ const Player = ({ duration, randomIdFromArtist, randomId2FromArtist, audio }) =>
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-           if (isPlaying) 
-            setCurrentTime(formatTime(audioPlayer.current.currentTime));
+            if (isPlaying)
+                setCurrentTime(formatTime(audioPlayer.current.currentTime));
+
+            progressBar.current.style.setProperty("--_progress", (audioPlayer.current.currentTime / durationInSeconds) * 100 + "%");
+
         }, 1000);
 
         return () => clearInterval(intervalId);
 
-    }, [isPlaying]);
+    }, [isPlaying, durationInSeconds]);
 
 
     return (
@@ -75,7 +89,7 @@ const Player = ({ duration, randomIdFromArtist, randomId2FromArtist, audio }) =>
 
                 <div className="player__bar">
 
-                    <div className="player__bar-progress"></div>
+                    <div ref={progressBar} className="player__bar-progress"></div>
 
                 </div>
 
