@@ -30,6 +30,7 @@ const Player = ({ duration, randomIdFromArtist, randomId2FromArtist, audio }) =>
 
     useEffect(() => {
         const intervalId = setInterval(() => {
+           if (isPlaying) 
             setCurrentTime(formatTime(audioPlayer.current.currentTime));
         }, 1000);
 
