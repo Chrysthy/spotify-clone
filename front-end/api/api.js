@@ -2,6 +2,7 @@
 //Requisição do front.
 //Pode usar o Fetch ou Axios.
 
+import 'dotenv/config';
 import axios from 'axios';
 
 const URL = "http://localhost:3000/api";
