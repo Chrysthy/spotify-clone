@@ -10,15 +10,15 @@ app.use(cors());
 app.use(express.json());
 //transforma em json
 
-app.get('/', (request, response) => {
+app.get('/api/', (request, response) => {
     response.send("'Hello World! Utilizando o node --watch ./api/server.js'");
 })
 
-app.get('/artists', async (request, response) => {
+app.get('/api/artists', async (request, response) => {
     response.send(await db.collection("artists").find({}).toArray());
 })
 
-app.get('/songs', async (request, response) => {
+app.get('/api/songs', async (request, response) => {
     response.send(await db.collection("songs").find({}).toArray());
 })
 
