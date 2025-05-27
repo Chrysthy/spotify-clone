@@ -4,7 +4,7 @@
 
 import axios from 'axios';
 
-const URL = "http://localhost:3000";
+const URL = "http://localhost:3000/api";
 
 const responseArtists = await axios.get(`${URL}/artists`);
 const responseSongs = await axios.get(`${URL}/songs`);
