@@ -14,7 +14,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
-    "express": "^5.1.0",
+    "express": "^4.21.2",
+    "express-list-endpoints": "^7.1.1",
     "mongodb": "^6.16.0",
     "path": "^0.12.7",
     "spotify-clone": "file:.."
