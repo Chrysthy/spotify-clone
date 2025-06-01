@@ -5,8 +5,10 @@
 import 'dotenv/config';
 import axios from 'axios';
 
-const { VITE_NODE_ENV } = import.meta.env;
-const URL = VITE_NODE_ENV === 'development' ? "http://localhost:3000/api" : '/api';
+// const { VITE_NODE_ENV } = import.meta.env;
+// const URL = VITE_NODE_ENV === 'development' ? "http://localhost:3000/api" : '/api';
+
+const URL = "https://spotify-clone-r1jm.onrender.com"
 
 const responseArtists = await axios.get(`${URL}/artists`);
 const responseSongs = await axios.get(`${URL}/songs`);
