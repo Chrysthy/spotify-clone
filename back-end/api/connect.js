@@ -1,5 +1,6 @@
 import { MongoClient } from "mongodb";
-import 'dotenv/config';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const URI = process.env.MONGO_URI;
 
@@ -13,3 +14,4 @@ export const db = client.db("spotifyAula");
 
 // console.log(songCollection)
 
+console.log('MONGO_URI:', process.env.MONGO_URI);
